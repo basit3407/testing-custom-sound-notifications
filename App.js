@@ -43,7 +43,7 @@ const setNotificationChannelAsync = () => {
       importance: Notifications.AndroidImportance.HIGH,
       vibrationPattern: [0, 250, 250, 250],
       lightColor: "#FF231F7C",
-      sound: "adhan.wav",
+      sound: "adhan.mp3",
     });
   }
 };
@@ -54,7 +54,7 @@ async function scheduleNotification() {
       title: "You've got mail! 📬",
       body: "Here is the notification body",
       data: { data: "goes here" },
-      sound: "adhan.wav",
+      sound: "adhan.mp3",
       color: "#FF231F7C",
     },
     trigger: { seconds: 5, channelId: "sound" },
