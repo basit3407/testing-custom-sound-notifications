@@ -55,6 +55,7 @@ async function scheduleNotification() {
       body: "Here is the notification body",
       data: { data: "goes here" },
       sound: "adhan.wav",
+      color: "#FF231F7C",
     },
     trigger: { seconds: 5, channelId: "sound" },
   });
