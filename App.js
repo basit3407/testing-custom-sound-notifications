@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Text, View, Platform } from "react-native";
+import { Text, View, Platform, Button } from "react-native";
 import * as Notifications from "expo-notifications";
 
 Notifications.setNotificationHandler({
