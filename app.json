@@ -10,7 +10,7 @@
         "expo-notifications",
         {
           "color": "#FF231F7C",
-          "sounds": ["./assets/adhan/adhan.mp3"]
+          "sounds": ["./assets/adhan/adhan.wav"]
         }
       ]
     ],
