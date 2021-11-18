@@ -40,7 +40,7 @@ const setNotificationChannelAsync = () => {
   if (Platform.OS === "android") {
     Notifications.setNotificationChannelAsync("sound", {
       name: "sound notification",
-      importance: Notifications.AndroidImportance.MAX,
+      importance: Notifications.AndroidImportance.HIGH,
       vibrationPattern: [0, 250, 250, 250],
       lightColor: "#FF231F7C",
       sound: "adhan.mp3",
