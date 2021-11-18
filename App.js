@@ -36,9 +36,11 @@ export default function App() {
   );
 }
 
+const channelId = "adhan";
+
 const setNotificationChannelAsync = () => {
   if (Platform.OS === "android") {
-    Notifications.setNotificationChannelAsync("sound", {
+    Notifications.setNotificationChannelAsync(channelId, {
       name: "sound notification",
       importance: Notifications.AndroidImportance.HIGH,
       vibrationPattern: [0, 250, 250, 250],
@@ -57,6 +59,6 @@ async function scheduleNotification() {
       sound: "adhan.mp3",
       color: "#FF231F7C",
     },
-    trigger: { seconds: 5, channelId: "sound" },
+    trigger: { seconds: 5, channelId },
   });
 }
