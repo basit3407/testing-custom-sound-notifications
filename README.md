@@ -14,7 +14,7 @@ Do the following steps:
 6.click on button to schedule notification
 
 Expected Behaviour:
-Notification alert should be shown and custom sound should be played after 5 seconds
+Notification alert should be shown and custom sound should be played after 5 seconds.Also tint color of notification alert should be that which was set in expo-notifications plugin
 
 Actual Behaviour:
-No Notification alert is shown and no sound is played
+No Notification alert is shown and no sound is played.Tint color of notifications plugin is still default color
