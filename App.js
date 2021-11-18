@@ -36,7 +36,7 @@ export default function App() {
   );
 }
 
-const channelId = "adhan";
+const channelId = "adhanNotification";
 
 const setNotificationChannelAsync = () => {
   if (Platform.OS === "android") {
