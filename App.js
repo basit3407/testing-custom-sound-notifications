@@ -38,11 +38,24 @@ export default function App() {
 
 const setNotificationChannelAsync = () => {
   if (Platform.OS === "android") {
-    Notifications.setNotificationChannelAsync("default", {
-      name: "default",
+    Notifications.setNotificationChannelAsync("sound", {
+      name: "sound notification",
       importance: Notifications.AndroidImportance.MAX,
       vibrationPattern: [0, 250, 250, 250],
       lightColor: "#FF231F7C",
+      sound: "adhan.wav",
     });
   }
 };
+
+async function scheduleNotification() {
+  await Notifications.scheduleNotificationAsync({
+    content: {
+      title: "You've got mail! 📬",
+      body: "Here is the notification body",
+      data: { data: "goes here" },
+      sound: "adhan.wav",
+    },
+    trigger: { seconds: 5, channelId: "sound" },
+  });
+}
